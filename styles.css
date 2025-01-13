@@ -1,60 +1,70 @@
-body{
-    background-color: rgb(103, 122, 73);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-.phonebook-container{
-    margin: 10px auto;
+.container {
+    background-color: #fff;
+    padding: 20px;
     border-radius: 10px;
-    width: 450px;
-    height: 570px;
-    background-color: rgb(239, 232, 232);
-}
-
-.call{
-    height: 60px;
-    display: block;
-    margin: 10px auto;
-    padding-top: 5px;
-}
-
-.main-text{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
 }
 
-.contact-adding-container{
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
     display: flex;
-    flex-direction: column;
-    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
 }
 
-.details{
-    display: block;
-    padding: 10px 30px;
-    width: fit-content;
-    margin-bottom: 7px;
-    margin: 4px auto;
-    padding-right: 200px;
-    border-radius: 10px;
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
     border: none;
-
-
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-#input-name{
-   
-
-
-}
-
-#input-number{
-   
-}
-
-#add-btn{
-    display: block;
-    padding: 10px 30px;
-    width: fit-content;
-    margin: 10px auto;
-    border-radius: 10px;
-    border: none;
+.delete-btn:hover {
+    background-color: #c82333;
 }

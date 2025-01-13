@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Phonebook</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="phonebook-container">
-<img src="./images/call-img.png" alt="call-logo" class="call">
-<h2 class="main-text">Phonebook App</h2><hr>
-<div class="contact-adding-container">
-<input type="text" id="input-name" placeholder="Enter Contact Name" class="details">
-<input type="text" id="input-number" placeholder="Enter Number" class="details">
-<button id="add-btn">Add Contact</button>
-</div>
-<div class="contact-list-container">
+    <div class="container">
+        <h1>Simple Phonebook</h1>
 
-</div>
-</div>
+        <div class="form-container">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="phone" placeholder="Enter Phone Number" required>
+            <button onclick="addContact()">Add Contact</button>
+        </div>
+
+        <h2>Contacts</h2>
+        <ul id="contact-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
